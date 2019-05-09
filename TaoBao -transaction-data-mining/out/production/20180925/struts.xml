@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <!--核心处理包-->
+    <package name="KernelAction" extends="struts-default" namespace="">
+        <action name="selectUserRules" class="nuc.zb.action.UserAction" method="selectUserRules">
+            <result name="selectUserRulesSUCCESS">/chart/associationRules.jsp</result>
+        </action>
+        <action name="selectGenderNum" class="nuc.zb.action.UserAction" method="selectGenderNum">
+            <result name="selectGenderNumSUCCESS">/chart/bar1.jsp</result>
+        </action>
+        <action name="selectActionNum" class="nuc.zb.action.UserAction" method="selectActionNum">
+            <result name="selectActionNumSUCCESS">/chart/bar2.jsp</result>
+        </action>
+        <action name="selectAge_rangeNum" class="nuc.zb.action.UserAction" method="selectAge_rangeNum">
+            <result name="selectAge_rangeNumSUCCESS">/chart/bar3.jsp</result>
+        </action>
+
+    </package>
+</struts>
+
